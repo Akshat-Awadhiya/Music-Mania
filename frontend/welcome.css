@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background : url('') center/cover no-repeat; Replace 'music_player_image.jpg' with the path to your image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .background{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('.jpg'); /* Replace 'your-background-image.jpg' with your actual image */
+      background-size: cover;
+      animation: slide 20s linear infinite; /* Adjust animation duration and timing function as needed */
+    }
+  
+  
+  .logo-container {
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  h1 {
+    font-family: Arial, sans-serif;
+    font-size: 5em; /* Increased font size */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow for better visibility */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    animation: float 5s infinite; /* Removed 'alternate' */
+    text-align: center; /* Centering text */
+    animation-timing-function: ease-in-out; /* Added timing function */
+}
+
+@keyframes float {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.9; /* Adjusted to a slightly lower value */
+    }
+}
+
+
+
+
+  .music {
+    color: rgb(108, 97, 97); /* Orange */
+  }
+  
+  .mania {
+    color: rgb(108, 97, 97); 
+   }
+  
+   /* @keyframes float {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+} */
+
+  
+  .start-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .start-button a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .start-button a:hover {
+    text-decoration:underline;
+}
